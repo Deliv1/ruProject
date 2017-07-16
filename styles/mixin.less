@@ -1,0 +1,20 @@
+@import url("variables.less");
+
+.light-hover-animation {
+	-webkit-transition: opacity 1s ease-in-out;
+  			-moz-transition: opacity 1s ease-in-out;
+  			-ms-transition: opacity 1s ease-in-out;
+  			-o-transition: opacity 1s ease-in-out;
+  			transition: opacity 1s ease-in-out;
+}
+
+.wall-decor-mixin(@p-left: 0, @f-size: 0px) {
+	padding-left: @p-left;
+	font-size: @f-size;
+	cursor: default;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	vertical-align: text-bottom;
+}

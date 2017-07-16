@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<title>Document</title>
+	<link rel="stylesheet" href="build/styles.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="header-inserted">
+        <div class="authorization">
+            <ul class = "pull-right">
+                <li><a href="#">Login</a><span class = "wall-decor">|</span></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- end Header -->
+<!-- Start navigation bar -->
+<nav class = "clearfix">
+    <a href="#" class="logo" alt = "#"></a>
+    <ul class = "navigation-bar pull-right">
+        <li><a href="">Servis</a></li><span class = "wall-decor">|</span>
+        <li><a href="">Calculator</a></li><span class = "wall-decor">|</span>
+        <li><a href="">Contacts</a></li>
+    </ul>
+</nav>
+<!-- End navigation bar -->
+
+<!-- descriptions contents -->
+<div class="container ">
+    <section class = "content-top ">
+        <div class="row pull-left">
+            <div class="col-xs-12 col-md-6 text-description">
+                <h3 class = "caption">Freight Calculator</h3>
+                <p>Find out market rate estimates for Ocean from anywhere to anywhere in the world, and Rail and Truck in the USA. Upon seeing the estimate, you have two options on how to proceed, should you decide to do so; either post in Exchange or get a Reservation and someone will contact you. Have fun!</p>
+            </div>
+<!--end description content -->
+
+<!--start first position form-->
+            <div class = "col-xs-12 col-md-6 form-overload">
+                <form action="#">
+                    <fieldset>
+                        <h3>1. SELECT METHOD OF SHIPPING</h3>
+                        <div class = "trans-object ">
+                            <input class = "transportation" id="air" type="radio" name="transport" value="air" />
+                            <label class="plane" for="air"></label> 
+                            <span class = 'trans-number one'>AIR</span>
+                        </div>
+                        <div class = "trans-object ">
+                            <input class = "transportation" id="sea" type="radio" name="transport" value="sea" />
+                            <label class="ship" for="sea"></label>
+                            <span class = 'trans-number second'>OCEAN</span>
+                        </div>
+                        <div class = "trans-object ">
+                            <input class = "transportation" id="clc" type="radio" name="transport" value="clc" />
+                            <label class="clc" for="clc"></label>
+                            <span class = "trans-number three">LCL</span>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+    
+    </section>
+</div>
+<!-- end first position form -->
+
+<!-- start second position form -->
+<div class="container">
+    <section class = "content-top">
+        <div class="row">
+            <div class = "col-xs-12 col-md-6">
+                <form action="#" class = "style-form">
+                    <fieldset class = "select-location">
+                        <h3>2. SELECT LOCATIONS</h3>
+                        <div class="form-group col-xs-12">
+                          <input type="text" class="form-control input-lg" id="origin" placeholder="ORIGIN AIRPORT">
+                        </div>
+                        <div class="form-group col-xs-12">
+                          <input type="text" class="form-control input-lg" id="destination" placeholder="DESTINATION AIRPORT">
+                        </div>
+                        <div class="form-group col-xs-8">
+                            <select class="form-control input-lg" id="commodity">
+                                <option>SELECT COMMODITY</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-xs-12">
+                          <input type="text" class="form-control input-lg" id="currency" placeholder="COMMODITY VALUE (USD)">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+<!-- end second form position -->
+
+<!-- start three position form -->
+            <div class = "col-xs-12 col-md-6">
+                <form action="#" class = "style-form">
+                    <fieldset class = "select-load">
+                        <h3>3. SELECT LOAD</h3>
+                            <div class="form-group col-xs-12">
+                              <input type="text" class="form-control input-lg" id="grossWeight" placeholder="GROSS WEIGHT">
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-4 load-radio">
+                                <select class="form-control input-lg " id="weight">
+                                    <option>kg/cm</option>
+                                    <option>kg/cm</option>
+                                    <option>kg/cm</option>
+                                    <option>kg/cm</option>
+                              </select>
+                            </div>
+                            
+                            <div class="col-xs-4">
+                                <input class="form-control input-lg" id="calculation" type="text" placeholder="Height">
+                            </div>
+                            <div class="col-xs-4 decor-x">
+                                <input class="form-control input-lg" id="calculation" type="text" placeholder="Weight">
+                            </div>
+                              <div class="col-xs-4 decor-x">
+                                <input class="form-control input-lg" id="calculation" type="text" placeholder="Height">
+                            </div>
+                        </fieldset>
+                </form>
+            </div>
+<!-- end form position and main content -->
+        </div>
+<!-- start button -->
+        <button type="button" class="btn btn-primary btn-block btn-lg main-button-style">GET RATE</button>
+<!-- end button -->
+    </section>
+</div>
+<!-- end main content -->
+<footer></footer>
+</body>
+
+</html> 
+
+
+
+
+
+
+
+
+
+
