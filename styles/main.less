@@ -22,9 +22,6 @@
 }
 
 
-
-
-
 //type of overload 
 //~~~~~~~~~~~~~
 //START 1 POSITION FORMS;
@@ -103,18 +100,10 @@ label.clc {
 }
 
 
-
 //END FIRST POSOTION FORM
 
 //START SECOND POSITION FORM
-/* .location {
-	input {
-		display: block;
-	}
-} */
-/* .select-load {
-	position: relative;
-} */
+
 //START  A COMMON MAIN STYLES 2 AND 3 FORM
 .decor-x:after {
 	color: @color-input;
@@ -124,36 +113,24 @@ label.clc {
     left: -7px;
     font-size: 30px;
 }
-.decor-x:last-child {
-	margin-bottom: 96px;
-}
-.select-location {
-	input, select {
-		margin-bottom: 50px;
-	}
-	.form-group {
-		margin-bottom: 0;
-	}
-}
 .style-form {
-	border: 4px solid#fff;
-    padding: 20px;
+	border: 4px solid @color-white;
+	min-height: 500px;
+    padding: 18px;
     border-radius: 4px;
     background: rgba(218,218,219, 0.5);
     h3 {
     	margin-bottom: 50px;
     }
-    input, select {
-		margin-bottom: 50px;
-	}
 	.form-group {
-		margin-bottom: 0;
+		margin-bottom: 50px;
 	}
 }
 .load-radio {
 	float: none;
 }
 // END FORMS STYLES
+
 // button style
 .main-button-style {
 	background-color: @color-white;
@@ -171,3 +148,25 @@ label.clc {
 	border-color: #aeb3b9;
 }
 // end button
+
+//Start table result styles
+.container .table-wrap {
+	margin-top: 20px;
+	padding: 10px; 
+}
+.table-wrap {
+	background-color: @color-table; 
+}
+.table-striped {
+	background-color: #f9f9f9;
+}
+.arrow-down	{
+	border: 3px solid @color-black;
+	border-radius: 5px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.table-border {
+	border: 1px solid #dddddb;
+}
+

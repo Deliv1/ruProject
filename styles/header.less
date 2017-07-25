@@ -1,7 +1,15 @@
-body {
-	background-image: url("../image/background.png");
-	background-repeat: no-repeat;
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -40px;
+	background: url("../image/background.png") no-repeat;
 	background-size: cover;
+}
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+.site-footer, .page-wrap:after {
+	height: 40px;
 }
 .clearfix:after {
 	clear: both;
@@ -19,10 +27,10 @@ header {
 	margin: 0 auto;
 	height: 74px;
 }
-.header-inserted, nav, aside, section{
+/* .header-inserted, nav, aside, section{
 	max-width: 1020px;
 	margin: 0 auto;
-}
+} пока в комменте если что удалить если всё норм*/ 
 .authorization {
 	background-color: @color-white;
 	padding: 10px 0 10px 0;

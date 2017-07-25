@@ -6731,6 +6731,13 @@ button.close {
 body {
   font-family: "agrotic", arial, sans-serif;
 }
+html,
+body {
+  height: 100%;
+}
+.container {
+  max-width: 1024px;
+}
 h3,
 p {
   color: #313a52;
@@ -6753,10 +6760,19 @@ footer {
   background-color: #ffffff;
   height: 36px;
 }
-body {
-  background-image: url("../image/background.png");
-  background-repeat: no-repeat;
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -40px;
+  background: url("../image/background.png") no-repeat;
   background-size: cover;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer,
+.page-wrap:after {
+  height: 40px;
 }
 .clearfix:after {
   clear: both;
@@ -6771,13 +6787,10 @@ header {
   margin: 0 auto;
   height: 74px;
 }
-.header-inserted,
-nav,
-aside,
-section {
-  max-width: 1020px;
-  margin: 0 auto;
-}
+/* .header-inserted, nav, aside, section{
+	max-width: 1020px;
+	margin: 0 auto;
+} пока в комменте если что удалить если всё норм*/
 .authorization {
   background-color: #ffffff;
   padding: 10px 0 10px 0;
@@ -6941,14 +6954,6 @@ label.clc {
 .trans-number.three {
   padding-left: 30px;
 }
-/* .location {
-	input {
-		display: block;
-	}
-} */
-/* .select-load {
-	position: relative;
-} */
 .decor-x:after {
   color: #7d7d7d;
   content: "x";
@@ -6957,31 +6962,18 @@ label.clc {
   left: -7px;
   font-size: 30px;
 }
-.decor-x:last-child {
-  margin-bottom: 96px;
-}
-.select-location input,
-.select-location select {
-  margin-bottom: 50px;
-}
-.select-location .form-group {
-  margin-bottom: 0;
-}
 .style-form {
-  border: 4px solid#fff;
-  padding: 20px;
+  border: 4px solid #ffffff;
+  min-height: 500px;
+  padding: 18px;
   border-radius: 4px;
   background: rgba(218, 218, 219, 0.5);
 }
 .style-form h3 {
   margin-bottom: 50px;
 }
-.style-form input,
-.style-form select {
-  margin-bottom: 50px;
-}
 .style-form .form-group {
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 .load-radio {
   float: none;
@@ -6999,6 +6991,25 @@ label.clc {
   color: #ffffff;
   background-color: #aeb3b9;
   border-color: #aeb3b9;
+}
+.container .table-wrap {
+  margin-top: 20px;
+  padding: 10px;
+}
+.table-wrap {
+  background-color: #d9edf6;
+}
+.table-striped {
+  background-color: #f9f9f9;
+}
+.arrow-down {
+  border: 3px solid #000000;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.table-border {
+  border: 1px solid #dddddb;
 }
 .light-hover-animation {
   transition: opacity 1s ease-in-out;
